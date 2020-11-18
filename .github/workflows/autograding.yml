@@ -1,0 +1,19 @@
+    name: Autograding Workflow
+
+    on: [push]
+
+    jobs:
+      build:
+        name: Autograding
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout reporitory
+            uses: actions/checkout@v2
+          - name: Checkout testcases
+            uses: actions/checkout@v2
+            with:
+              repository: cisc2200/example-tests
+              path: tests
+              token: ${{ secrets.CHECKOUT_TEST_REPO }}
+          - name: Run autograding
+            uses: cisc2200/autograding@main
