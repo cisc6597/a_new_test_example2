@@ -14,6 +14,5 @@
             with:
               repository: cisc2200/example-tests
               path: tests
-              token: ${{ secrets.CHECKOUT_TEST_REPO }}
           - name: Run autograding
             uses: cisc2200/autograding@main
