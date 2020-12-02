@@ -13,6 +13,5 @@
             uses: actions/checkout@v2
             with:
               repository: cisc6597/test-cases
-              path: tests
           - name: Run autograding
             uses: cisc6597/autograding@main
