@@ -11,5 +11,7 @@ COPY . /tests
 WORKDIR /tests
 
 RUN ls
+RUN ls bin
+
 
 ENTRYPOINT [ "make", "test" ]
