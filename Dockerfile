@@ -7,7 +7,7 @@ RUN apk update && \
 ENV CC=gcc
 ENV CXX=g++
 
-COPY . /test.out
+COPY . /test
 WORKDIR /test
 
 ENTRYPOINT [ "make", "test" ]
