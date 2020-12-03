@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.10
 
 RUN apk update && \
     apk upgrade && \
@@ -7,7 +7,7 @@ RUN apk update && \
 ENV CC=gcc
 ENV CXX=g++
 
-COPY . /lab
-WORKDIR /lab
+COPY . /test.out
+WORKDIR /test
 
 ENTRYPOINT [ "make", "test" ]
