@@ -1,8 +1,8 @@
-test.out: hello.cpp main.cpp
+main.out: hello.cpp main.cpp
 	@$(CXX) -g -Wall $(CXXFLAGS) $^ -o $@
 
-test: test.out
-	@./test.out
+test: main.out
+	@./main.out
 
 format:
 	@clang-format -i *.cpp
