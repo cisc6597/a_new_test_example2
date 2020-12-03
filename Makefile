@@ -9,3 +9,6 @@ format:
 
 clean:
 	@rm -f *.out
+
+
+ls
