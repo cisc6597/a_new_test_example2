@@ -7,11 +7,10 @@ RUN apk update && \
 ENV CC=gcc
 ENV CXX=g++
 
-COPY . /tests
-WORKDIR /tests
+COPY . /main
+WORKDIR /main
 
-RUN ls
-RUN ls bin
+
 
 
 ENTRYPOINT [ "make", "test" ]
