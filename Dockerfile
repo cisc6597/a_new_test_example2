@@ -10,4 +10,6 @@ ENV CXX=g++
 COPY . /test
 WORKDIR /test
 
+RUN ls
+
 ENTRYPOINT [ "make", "test" ]
