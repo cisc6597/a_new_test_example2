@@ -7,8 +7,8 @@ RUN apk update && \
 ENV CC=gcc
 ENV CXX=g++
 
-COPY . /test
-WORKDIR /test
+COPY . /tests
+WORKDIR /tests
 
 RUN ls
 
