@@ -1,7 +1,7 @@
 test.out: hello.cpp main.cpp
 	@$(CXX) -g -Wall $(CXXFLAGS) $^ -o $@
 
-test: main.out
+test: test.out
 	@./test.out
 
 format:
